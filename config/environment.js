@@ -6,6 +6,21 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: 'AIzaSyCRYy5H5nkW6TrqtjntREOBacJkewXoFJE',
+      authDomain: 'platzimusic-6cc75.firebaseapp.com',
+      databaseURL: 'https://platzimusic-6cc75.firebaseio.com',
+      storageBucket: 'platzimusic-6cc75.appspot.com',
+    },
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+  
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
